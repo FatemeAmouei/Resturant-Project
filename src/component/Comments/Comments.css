@@ -1,0 +1,42 @@
+.Comments-section {
+  height: 80vh;
+}
+
+
+.Comments-swiper-slide {
+  align-items: center;
+  background-color: #fff;
+  height: 100%;
+  width: 100% !important;
+  margin-top: 10rem;
+}
+
+.Comments-swiper .swiper-button-next,
+.Comments-swiper .swiper-button-prev {
+  color: #4e4e4e;
+  margin: 0 15rem;
+  opacity: 0;
+}
+
+.Comments-swiper:hover .swiper-button-next,
+.Comments-swiper:hover .swiper-button-prev {
+  opacity: 1;
+  animation-duration: 3s;
+}
+
+.Comments-swiper .swiper-pagination-bullet {
+  background-color: #fff !important;
+  border: 0.2rem solid #000 !important;
+  padding: 0.3rem;
+}
+
+.Comments-swiper .swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.swiper-pagination-bullet:hover {
+  border-color: #000 !important;
+  background-color: #fff !important;
+  opacity: 0.8;
+
+}

@@ -1,0 +1,23 @@
+.video-section__img {
+  height: 70vh !important;
+  width: 100% !important;
+
+}
+
+.videoitem-img {
+  width: 100%;
+  height: 100%;
+}
+
+.videoitem-bargimg {
+  width: 5%;
+  height: 10%;
+}
+
+.video-div {
+  top: -17rem;
+  right: -15rem;
+  height: 23rem;
+  width: 75%;
+
+}

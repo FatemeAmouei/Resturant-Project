@@ -1,0 +1,39 @@
+.imgs-section {
+  height: 90vh;
+}
+
+.imgs-section__center {
+  width: 45%;
+  height: 100%
+}
+
+.imgs-section__right {
+  width: 40%;
+  height: 100%
+}
+
+.imgs-section__left {
+  width: 15%;
+  height: 90%;
+
+}
+
+.imgs-section__centerdiv {
+  height: 90%;
+}
+
+.imgs-section__right {
+  height: 100%;
+}
+
+.left-texts {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: start !important;
+  align-items: end !important;
+  padding-top: 2rem;
+}
+
+.left-texts>button {
+  margin-right: 2rem;
+}

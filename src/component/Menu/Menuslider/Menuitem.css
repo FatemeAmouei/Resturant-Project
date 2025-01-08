@@ -1,0 +1,11 @@
+.menuitem-component {
+  font-family: iranyekan, sans-serif;
+}
+
+.menuitem-img {
+  width: 80%;
+}
+
+.menuitem-component:hover .menuitem-icons {
+  opacity: 1;
+}

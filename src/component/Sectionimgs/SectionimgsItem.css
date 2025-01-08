@@ -1,0 +1,17 @@
+.img-desc {
+  width: 30rem;
+}
+
+.ImgsItem:hover .imgitem-img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.imgs-section__leftImg {
+  height: 85vh;
+}
+
+.right-Img {
+  height: 90vh;
+}

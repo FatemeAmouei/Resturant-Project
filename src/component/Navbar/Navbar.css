@@ -1,0 +1,24 @@
+.navbar-section {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-right__badge {
+  position: relative;
+  top: -40px;
+  right: 14px;
+  background-color: rgb(3, 99, 56);
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+}
+
+.navbar-left__badge {
+  position: relative;
+  top: -16px;
+  left: -40px;
+  background-color: rgb(3, 99, 56);
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+}

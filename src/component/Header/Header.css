@@ -1,0 +1,35 @@
+.header-section {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.header-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.header-swiper .swiper-button-next,
+.header-swiper .swiper-button-prev {
+  color: #fff !important;
+  font-size: 1px !important;
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1.5rem;
+  font-size: 15px;
+}
+
+.header-text {
+  font-family: "Playfair Display";
+}
+
+@keyframes zoomAnimation {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}

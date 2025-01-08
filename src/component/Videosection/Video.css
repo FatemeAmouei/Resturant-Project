@@ -1,0 +1,29 @@
+.videosection-video-cover,
+.videosection-video-frame {
+  width: 29rem;
+  height: 19rem;
+  margin-left: 3rem;
+}
+
+.videosection-video-container {
+  overflow: hidden;
+}
+
+.videosection-video-container:hover .videosection-video-cover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.videosection-video-container:hover .videosection-video-btn {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  border-color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+}
+
+.videosection-video-container:hover .videosection-video-divdark {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
