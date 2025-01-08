@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import Headerslideritem from "./Headerslideritem";
-import wow from "wow.js";
 
 export default function Header() {
   return (
