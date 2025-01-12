@@ -1,0 +1,17 @@
+.basket-btn {
+  background-color: #5f6e1e;
+}
+
+.basket-forgotPass {
+  color: #5f6e1e;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

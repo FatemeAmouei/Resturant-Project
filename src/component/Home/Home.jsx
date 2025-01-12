@@ -10,7 +10,7 @@ import Suggestionfood from "../Suggestionfood/Suggestionfood";
 import Comment from "../Comments/Comments";
 import Footer from "../Footer/Footer";
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

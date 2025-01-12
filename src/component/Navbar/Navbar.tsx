@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import SearchModal from "../Modal/SearchModal/Searchmodal";
+import { SignInModal } from "../Modal/SingInModal/SingInModal";
+import { BasketModal } from "../Modal/BasketModal/BasketModal";
+import { Link } from "react-router-dom";
+import Home from "../Home/Home.tsx";
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
+  const [showModal, setShowModal] = useState(false);
+  const [showSignInModal, setShowSignInModal] = useState(false);
+  const [showBasketModal, setShowBasketModal] = useState(false);
+
   return (
     <>
       <section className="w-full navbar-section">
@@ -11,6 +20,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className="text-gray-500 hover:bg-gray-600 hover:text-gray-500 focus:ring-4 focus:ring-gray-500 rounded-lg py-2"
+                onClick={() => setShowBasketModal(true)}
               >
                 <div className="flex items-center text-center">
                   <span className=" text-white p-1 font-bold mr-5">
@@ -40,6 +50,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className="text-gray-500 hover:bg-gray-600 hover:text-gray-900 focus:ring-4 focus:ring-gray-500 rounded-lg p-3"
+                onClick={() => setShowSignInModal(true)}
               >
                 <svg
                   className="navbar-left__iconUser"
@@ -143,8 +154,8 @@ export default function Navbar() {
                 </li>
               </ul>
 
-              <a
-                href="https://flowbite.com/"
+              <Link
+                to={"/"}
                 className="flex items-center space-x-3 rtl:space-x-reverse p-4"
               >
                 <img
@@ -152,16 +163,16 @@ export default function Navbar() {
                   className="h-8"
                   alt="Logo"
                 />
-              </a>
+              </Link>
 
               <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 border-gray-100 rounded-lg">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/blogs"}
                     className="block py-2 px-3 rounded text-white hover:text-blue-200"
                   >
-                    وبلاگ
-                  </a>
+                    بلاگ
+                  </Link>
                 </li>
 
                 <li>
@@ -238,32 +249,38 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center justify-end w-1/4 px-3 py-3 self-center text-center">
-              <button
-                type="button"
-                className="text-gray-500 hover:bg-gray-600 hover:text-gray-900 focus:ring-4 focus:ring-gray-500 rounded-lg  "
+              <Link
+                to={"/favorites"}
+                className="flex items-center space-x-3 rtl:space-x-reverse p-4"
               >
-                <svg
-                  className="mx-5 mt-4"
-                  width="28"
-                  height="28"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 23 23"
+                <button
+                  type="button"
+                  className="text-gray-500 hover:bg-gray-600 hover:text-gray-900 focus:ring-4 focus:ring-gray-500 rounded-lg  "
                 >
-                  <path
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                  />
-                </svg>
-                <span className=" text-white navbar-right__badge">0</span>
-              </button>
+                  <svg
+                    className="mx-5 mt-4"
+                    width="28"
+                    height="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 23 23"
+                  >
+                    <path
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                    />
+                  </svg>
+                  <span className=" text-white navbar-right__badge">0</span>
+                </button>
+              </Link>
 
               <button
                 type="button"
                 className="text-gray-500 hover:bg-gray-600 hover:text-gray-900 focus:ring-4 focus:ring-gray-500 rounded-lg p-2 "
+                onClick={() => setShowModal(true)}
               >
                 <svg
                   className="mb-3 mx-3 mt-3"
@@ -283,6 +300,22 @@ export default function Navbar() {
                 </svg>
               </button>
             </div>
+
+            {showModal && (
+              <SearchModal showModal={showModal} setshowmodal={setShowModal} />
+            )}
+            {showSignInModal && (
+              <SignInModal
+                showSignInModal={showSignInModal}
+                setShowSignInModal={setShowSignInModal}
+              />
+            )}
+            {showBasketModal && (
+              <BasketModal
+                showBasketModal={showBasketModal}
+                setShowBasketModal={setShowBasketModal}
+              />
+            )}
           </div>
         </nav>
       </section>

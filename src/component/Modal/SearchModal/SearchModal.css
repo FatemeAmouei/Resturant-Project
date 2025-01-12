@@ -1,0 +1,9 @@
+.TEModalDialog {
+  height: 85vh;
+  margin-top: 10rem;
+}
+
+input::placeholder {
+  font-size: 4.5rem;
+  color: white;
+}

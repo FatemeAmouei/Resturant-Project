@@ -22,7 +22,7 @@ export default function Header() {
         modules={[Navigation, Scrollbar]}
         navigation={true}
         scrollbar={{ draggable: true }}
-        onSlideChange={() => {
+        /*         onSlideChange={() => {
           const activeSlide = document.querySelector(
             ".swiper-slide-active img"
           );
@@ -33,7 +33,7 @@ export default function Header() {
               Swiper.autoplay.start();
             }, 1000);
           }
-        }}
+        } }*/
         className="header-swiper"
       >
         <SwiperSlide className="header-swiper-slide">

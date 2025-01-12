@@ -44,7 +44,7 @@ export default function Footer() {
             <div className="footer-center__top flex flex-col justify-around mx-5 items-end  text-lg">
               <div className=" flex flex-col justify-center">
                 <p>طراحی داخلی مینیمال ژاپنی</p>
-                <div className=" flex justify-center text-gray-400 text-lg">
+                <div className=" flex justify-center text-gray-400 text-lg pt-3">
                   <p className="pr-5">بدون دیدگاه</p>
                   <p>ژوئن 16, 2017</p>
                 </div>{" "}
@@ -54,11 +54,11 @@ export default function Footer() {
             <div className="footer-divider w-full border-t border-gray-700 my-4"></div>
 
             <div className="footer-center__bottom flex justify-end m-5 text-lg">
-              <div className=" flex flex-col justify-center mx-5">
+              <div className=" flex flex-col justify-center mx-4">
                 <p>دکور داخلی جدید از خانم زرگر</p>
 
-                <div className=" flex justify-center text-gray-400 text-lg">
-                  <p className="pr-5">بدون دیدگاه</p>
+                <div className=" flex justify-center text-gray-400 text-lg pt-3">
+                  <p className="pr-4">بدون دیدگاه</p>
                   <p>ژوئن 16, 2017</p>
                 </div>
               </div>

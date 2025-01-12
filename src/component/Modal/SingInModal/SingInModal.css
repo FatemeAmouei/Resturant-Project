@@ -1,0 +1,29 @@
+.modal-section {
+  direction: rtl;
+  margin-left: -102rem;
+  height: 100%;
+  max-width: 30rem;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.card-section {
+  height: 100%;
+}
+
+.sign-btn {
+  background-color: #5f6e1e;
+}
+
+.sign-forgotPass {
+  color: #5f6e1e;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
