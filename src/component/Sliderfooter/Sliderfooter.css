@@ -1,0 +1,10 @@
+.Sliderfooter-swiper-slide {
+  filter: grayscale(1);
+  opacity: 0.5;
+  scale: 0.8;
+}
+
+.Sliderfooter-swiper-slide:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}

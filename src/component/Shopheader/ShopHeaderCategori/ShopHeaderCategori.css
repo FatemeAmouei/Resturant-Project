@@ -1,0 +1,20 @@
+.categori-img {
+  width: 4rem;
+  height: 3rem;
+}
+
+.categori-texts__title::after {
+  content: "";
+  position: absolute;
+  font-size: xxx-large;
+  background-color: #5f6e1e;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  right: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.categori-section__texts:hover .categori-texts__title::after {
+  width: 100%;
+}

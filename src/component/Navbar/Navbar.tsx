@@ -4,7 +4,6 @@ import SearchModal from "../Modal/SearchModal/Searchmodal";
 import { SignInModal } from "../Modal/SingInModal/SingInModal";
 import { BasketModal } from "../Modal/BasketModal/BasketModal";
 import { Link } from "react-router-dom";
-import Home from "../Home/Home.tsx";
 
 export default function Navbar(): JSX.Element {
   const [showModal, setShowModal] = useState(false);
@@ -176,12 +175,12 @@ export default function Navbar(): JSX.Element {
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/Store"}
                     className="block py-2 px-3 rounded text-white hover:text-blue-200"
                   >
                     فروشگاه
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="relative group">

@@ -1,8 +1,7 @@
 import React from "react";
 import "./Favorite.css";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import Sliderfooter from "../Sliderfooter/Sliderfooter";
 
 export default function Favorite() {
   return (
@@ -10,7 +9,6 @@ export default function Favorite() {
       <div className="favorite-section">
         <div className="favorite-section__top flex flex-col justify-center items-center h-1/4 bg-black text-white text-center ">
           <h1 className="font-bold text-8xl ">علاقه مندی </h1>
-
           <nav className="flex mt-8" aria-label="Breadcrumb">
             <ol className="inline-flex items-center">
               <li className="inline-flex items-center">
@@ -35,6 +33,7 @@ export default function Favorite() {
             </ol>
           </nav>
         </div>
+
         <div className="favorite-section__bottom h-3/4">
           <div className="favorite-section__texts flex flex-col justify-end items-center h-3/4">
             <h1 className="font-bold text-6xl pb-8">
@@ -54,72 +53,7 @@ export default function Favorite() {
             </button>
           </div>
 
-          <div className="favorite-section__sliders h-1/4 w-3/4 mt-28 ml-72">
-            <Swiper loop={true} slidesPerView={7} className="favorite-swiper">
-              <SwiperSlide className="favorite-swiper-slide">
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-hay.png"
-                  alt="brand-hay"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-Joseph-Joseph.png"
-                  alt="brand-Joseph"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-klober.png"
-                  alt="brand-klober"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="	https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-Louis-Poulsen.png"
-                  alt="brand-Louis"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-Magisso.png"
-                  alt="brand-Magisso"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-Eva-Solo.png"
-                  alt="brand-Eva"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="	https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-alessi.png"
-                  alt="brand-alessi"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-Eva-Solo.png"
-                  alt="brand-Eva-Solo"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="favorite-swiper-slide">
-                {" "}
-                <img
-                  src="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/brand-flos.png"
-                  alt="brand-flos"
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+          <Sliderfooter />
         </div>
       </div>
     </>
