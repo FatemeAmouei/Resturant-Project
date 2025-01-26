@@ -8,10 +8,12 @@ export default function Chiefmenuitem(props: any) {
         <img src={props.img} alt="CheiMenuImg" />
       </div>
 
-      <div className="chiefmenuitem-cover absolute inset-0 bg-black font-bold bg-opacity-50 flex flex-row-reverse items-center justify-center opacity-0 text-white ">
-        <div className=" flex  flex-col items-center justify-between w-full h-20 mr-20">
-          <h2 className=" chiefmenuitem-title text-2xl ">{props.title}</h2>
-          <p className=" chiefmenuitem-price text-lg  mt-2">{props.price}</p>
+      <div className="chiefmenuitem-cover absolute inset-0 bg-black font-bold bg-opacity-50 flex flex-row-reverse items-center justify-center opacity-0 text-white">
+        <div
+          className={`flex flex-col items-center justify-between w-full h-20 mr-20 ${props.itemClass}`}
+        >
+          <h2 className="chiefmenuitem-title text-2xl">{props.title}</h2>
+          <p className="chiefmenuitem-price text-lg mt-2">{props.price}</p>
           <button className="chiefmenuitem-btn relative inline-flex items-center justify-center px-9 py-3 text-xl font-medium text-white border-2 border-white hover:border-opacity-50 mt-2">
             <span> {props.btn}</span>
             <a href="basketshop" className="btn-icon mx-5 hidden">

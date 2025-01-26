@@ -106,7 +106,7 @@ export default function Sidebar() {
               />
             </div>
 
-            <div className="flex justify-end items-center mt-8 font-bold text-xl">
+            <div className="flex justify-end items-center mt-8 font-bold text-lg">
               <span className="pr-4"> (تومان) </span>
 
               <span>
@@ -171,7 +171,7 @@ export default function Sidebar() {
               count="149,000 تومان"
               categoriClass="my-4 border-b-2 pb-6 "
               imgClass="products-img mx-4"
-              textsClass="text-xl font-bold"
+              textsClass="text-md font-bold"
               titleClass="product-title hover:opacity-40 w-full"
               countClass="product-price pt-3"
             />
@@ -181,7 +181,6 @@ export default function Sidebar() {
               count="5,000 تومان – 15,000 تومان"
               categoriClass="my-4 border-b-2 pb-6 "
               imgClass="products-img mx-4"
-              textsClass="text-xl font-bold"
               titleClass="product-title hover:opacity-40 w-full"
               countClass="product-price pt-3"
             />
@@ -191,17 +190,18 @@ export default function Sidebar() {
               count="29,000 تومان"
               categoriClass="my-4 border-b-2 pb-6 "
               imgClass="products-img mx-4"
-              textsClass="text-xl font-bold"
+              textsClass="text-md font-bold"
               titleClass="product-title hover:opacity-40 w-full"
               countClass="product-price pt-3"
             />
             <ShopHeaderCategori
               img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/product-food-1.jpg"
               title="کاور چوبی آیفون 12 پرو مکس"
-              count="349,000 تومان"
+              count="399,000 تومان"
+              discountcount="349,000 تومان"
               categoriClass="my-4 border-b-2 pb-6 "
               imgClass="products-img mx-4"
-              textsClass="text-xl font-bold"
+              textsClass="text-md font-bold"
               titleClass="product-title hover:opacity-40 w-full"
               countClass="product-price pt-3"
             />
@@ -211,7 +211,7 @@ export default function Sidebar() {
               count="399,000 تومان"
               categoriClass="my-4 border-b-2 pb-6 "
               imgClass="products-img mx-4"
-              textsClass="text-xl font-bold"
+              textsClass="text-md font-bold"
               titleClass="product-title hover:opacity-40 w-full"
               countClass="product-price pt-3"
             />

@@ -3,7 +3,7 @@ import "./Menutitle.css";
 
 export default function Menutitle(props: any) {
   return (
-    <section className="menutitle-section flex flex-col">
+    <section className={`flex flex-col ${props.menutitleClassname}`}>
       <div className="menutitle-left flex flex-col items-center justify-center">
         <p className="menutitle-left__subtitle text-3xl mt-20 text-green-900 ">
           {props.subtitle}

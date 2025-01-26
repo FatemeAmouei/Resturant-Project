@@ -13,6 +13,7 @@ export default function Menuslider() {
   return (
     <section className="menuslider-section bg-white flex flex-col justify-center m-0 ">
       <Menutitle
+        menutitleClassname="menuslider-menutitle"
         className="menuslider-section__title"
         subtitle="منوی پیشنهادی ما"
         title="غذاهای ویژه رستوران"

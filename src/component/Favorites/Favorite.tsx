@@ -2,6 +2,7 @@ import React from "react";
 import "./Favorite.css";
 import { Link } from "react-router-dom";
 import Sliderfooter from "../Sliderfooter/Sliderfooter";
+import { MdFavoriteBorder } from "react-icons/md";
 
 export default function Favorite() {
   return (
@@ -34,7 +35,8 @@ export default function Favorite() {
           </nav>
         </div>
 
-        <div className="favorite-section__bottom h-3/4">
+        <div className="favorite-section__bottom h-3/4 flex flex-col justify-center items-center">
+          <MdFavoriteBorder className=" favorite-icon opacity-20 h-full mt-28" />
           <div className="favorite-section__texts flex flex-col justify-end items-center h-3/4">
             <h1 className="font-bold text-6xl pb-8">
               .این لیست علاقه مندی خالی است

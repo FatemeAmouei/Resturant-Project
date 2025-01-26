@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.favorite-icon {
+  font-size: 20rem;
+}
+
 .favorite-btn {
   background-color: #5f6e1e;
 }

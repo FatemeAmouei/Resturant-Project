@@ -6,6 +6,7 @@ interface CategoriProps {
   img?: string;
   title: string;
   count: string;
+  onClick: () => void;
   imgClass?: string;
   categoriClass?: string;
   textsClass?: string;
@@ -18,6 +19,7 @@ export default function ShopHeaderCategori(props: CategoriProps) {
     <>
       <div
         className={`flex flex-row-reverse items-center ml-6 ${props.categoriClass}`}
+        onClick={props.onClick}
       >
         <div className="categori-section__img items-center">
           <Link to={"/"} className="items-center">

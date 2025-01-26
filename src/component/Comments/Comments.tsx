@@ -11,14 +11,15 @@ import Comment from "../Comments/Comment";
 
 export default function Comments() {
   return (
-    <section className="Comments-section bg-white flex flex-col justify-center">
+    <section className="Comments-section bg-white flex flex-col justify-start">
       <Menutitle
-        className="Comments-section__title h-1/3"
+        menutitleClassname="Comments-menutitle"
+        className="Comments-section__title h-1/4"
         subtitle="نظرات مشتریان"
         title="از بازدید کنندگان ما"
       />
       <Swiper
-        className="Comments-swiper w-2/3 h-1/2"
+        className="Comments-swiper w-2/3 h-3/4"
         loop={true}
         autoplay={true}
         modules={[Navigation, Scrollbar, Pagination]}

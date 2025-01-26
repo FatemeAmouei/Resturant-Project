@@ -1,15 +1,22 @@
 import React from "react";
 import "./Shopheader.css";
 import ShopHeaderCategori from "./ShopHeaderCategori/ShopHeaderCategori";
+interface ShopHeaderProps {
+  onFilter: (category: string) => void;
+}
 
-export default function Shopheader() {
+const Shopheader: React.FC<ShopHeaderProps> = ({ onFilter }) => {
   return (
     <>
       <div className="shopheader-section flex flex-col justify-center items-center bg-black text-white ">
         <h1 className="font-bold text-8xl">فروشگاه </h1>
 
         <div className="shopheader-categories flex flex-row-reverse justify-between items-center mt-16">
-          <ShopHeaderCategori title="بدون دسته بندی" count=" 1 محصول" />
+          <ShopHeaderCategori
+            title="بدون دسته بندی"
+            count=" 1 محصول"
+            onClick={() => onFilter("")}
+          />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/knives.svg"
             title="آشپزی"
@@ -18,6 +25,7 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("آشپزی")}
           />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/knives.svg"
@@ -27,6 +35,7 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("اسباب بازی")}
           />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/flower.svg"
@@ -36,6 +45,7 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("روشنایی")}
           />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/flower.svg"
@@ -45,6 +55,7 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("ساعت")}
           />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/chair.svg"
@@ -54,6 +65,7 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("لوازم جانبی")}
           />
           <ShopHeaderCategori
             img="https://demo.i-wp.ir/woodland/food/wp-content/uploads/2017/06/chair.svg"
@@ -63,9 +75,11 @@ export default function Shopheader() {
             imgClass="categori-img"
             textsClass="categori-section__texts"
             titleClass="categori-texts__title"
+            onClick={() => onFilter("مبلمان")}
           />
         </div>
       </div>
     </>
   );
-}
+};
+export default Shopheader;

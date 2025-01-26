@@ -1,0 +1,139 @@
+.store-section {
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.store-sidebar {
+  position: relative;
+  width: 37rem;
+  height: auto;
+  background-color: #f4f4f4;
+  max-height: 100vh;
+
+}
+
+.store-component {
+  width: calc(100% - 37rem);
+  height: 100%;
+  padding: 20px;
+}
+
+.store-body {
+  display: flex;
+  position: relative;
+  padding-top: 60px !important;
+
+}
+
+.store-head {
+  height: 10vh;
+  width: 80%;
+}
+
+.filter-section {
+  align-items: center !important;
+  z-index: 99;
+
+}
+
+.storemenu-bottom {
+  display: grid;
+  gap: 1rem;
+
+}
+
+.storemenu-bottom.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.storemenu-bottom.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.storemenu-bottom.four {
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.store-item {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.store-img {
+  width: 100%;
+  height: auto;
+}
+
+.moreInfo {
+  width: 100%;
+}
+
+.storeitem-btn {
+  background-color: #5f6e1e;
+}
+
+.store-item:hover {
+  transform: translateY(-1%);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.store-item:hover .moreInfo {
+  display: block;
+  opacity: 1;
+  transform: none;
+}
+
+.storeitem-btn:hover span {
+  display: none
+}
+
+.storeitem-btn:hover .btn-icon {
+  visibility: visible;
+  display: inline;
+}
+
+.item-discount {
+  position: relative;
+  top: -18rem;
+  left: 9rem;
+  background-color: #5f6e1e;
+  z-index: 10;
+}
+
+.storeItem-text {
+  position: relative;
+  overflow: hidden;
+  max-height: 4.8em;
+  line-height: 1.6em;
+}
+
+.storeItem-text::after {
+  content: "...";
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #000;
+  background: #fff;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 100;
+}
+
+.storeItem-text:hover {
+  max-height: none;
+}
+
+.storeItem-text:hover::after {
+  opacity: 1;
+}
