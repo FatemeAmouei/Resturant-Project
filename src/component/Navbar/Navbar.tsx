@@ -72,17 +72,9 @@ export default function Navbar(): JSX.Element {
 
             <div className="flex items-center justify-between md:flex md:w-auto w-2/4 ">
               <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 border-gray-100 rounded-lg ">
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 rounded text-white hover:text-blue-200 "
-                  >
-                    ارتباط با ما
-                  </a>
-                </li>
-
                 <li className="relative group">
-                  <button
+                  <Link
+                    to={"/Services"}
                     id="dropdownNavbarLink"
                     data-dropdown-toggle="dropdownNavbar"
                     className="flex items-center justify-between w-full text-white rounded hover:text-blue-200 md:p-0 md:w-auto"
@@ -105,7 +97,7 @@ export default function Navbar(): JSX.Element {
                       />
                     </svg>
                     خدمات
-                  </button>
+                  </Link>
 
                   <div
                     id="dropdownNavbar"
@@ -143,14 +135,12 @@ export default function Navbar(): JSX.Element {
                   </div>
                 </li>
 
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 rounded text-white hover:text-blue-200 "
-                  >
-                    درباره ی ما
-                  </a>
-                </li>
+                <Link
+                  to={"/aboutus"}
+                  className="block py-2 px-3 rounded text-white hover:text-blue-200 "
+                >
+                  درباره ی ما
+                </Link>
               </ul>
 
               <Link
@@ -181,68 +171,6 @@ export default function Navbar(): JSX.Element {
                   >
                     فروشگاه
                   </Link>
-                </li>
-
-                <li className="relative group">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar-right"
-                    className="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:text-blue-200 md:p-0 md:w-auto"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      style={{ marginTop: "20px" }}
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        stroke="white"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m1 1 4 4 4-4"
-                      />
-                    </svg>
-                    خانه
-                  </button>
-
-                  <div
-                    id="dropdownNavbar-right"
-                    className="absolute hidden group-hover:block rounded-lg shadow w-44 z-10 bg-black"
-                  >
-                    <ul
-                      className="text-md text-white text-right bg-black-100"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-2 py-3 hover:text-blue-200 hover:bg-gray-600"
-                        >
-                          منو اصلی
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-2 py-3 hover:text-blue-200 hover:bg-gray-600"
-                        >
-                          سبدخرید
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-2 py-3 hover:text-blue-200 hover:bg-gray-600"
-                        >
-                          حساب کاربری من
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
                 </li>
               </ul>
             </div>
